@@ -1,0 +1,220 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px ;
+    
+}
+
+/******************************************************/
+/*Navegacion*/
+header{
+    /*background-color: aquamarine;*/
+    width:100% ;
+    height: 60px;
+
+}
+/*Acceder a nav a traves de header*/
+header nav {
+    /*display felx permite */
+    display: flex;
+    justify-content: flex-end;
+   /* background-color: aquamarine;*/
+}
+
+header nav .navrightsection{
+    background-color: rgba(255, 255, 255, 0.086);
+    width: 250px;
+    /*width ancho
+    height alto y el valor autoo es altura automatica*/
+    height: auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /*propiedad centra verticalmente dentro del elemento navrightsection*/
+    align-items:center;
+
+
+}
+
+a{
+    /*quita la linea debajo de las anclas */
+    text-decoration: none;
+}
+
+nav .navrightsection a{
+    /*color de texto */
+     color: rgba(0,0,0,.87) ;
+     /*Separa las anclas*/
+     margin-right: 20px;
+}
+
+/*icono del menu*/
+nav .navrightsection .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    /*permite poner la imagen contenida dentro de un elemento mas grande */
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+}
+/*Imagen del usuario */
+nav .navrightsection img {
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+}
+
+/******************************************************/
+main {
+    margin-top: 150px;
+    /*centrar elemento*/
+    text-align: center;
+}
+
+main .mainlogo{
+   /* background-color: rgb(215, 251, 239);*/
+    width: 550px;
+    margin-bottom: 50px;
+    /*centrado absoluto 
+    vertical y horizontal */
+    margin: 0 auto;
+}
+
+main .mainlogo img{
+    height: 120px;
+    
+}
+
+main .maininput {
+   /* background-color: rgb(233, 209, 255);*/
+    width: 530px;
+    margin: 0 auto ;
+    margin-bottom: 30px;
+}
+
+main .maininputcontainer{
+    width: 525px;
+    border: 1px solid #dfe1e5;
+    border-radius: 20px;
+} 
+
+main .maininput input{
+    height: 30px;
+    border: none;
+    outline: none;
+    width: 430px;
+}
+
+main .maininputcontainer:hover {
+    border-color: #dfe1e500;
+    /*0 desplazamineto horizontal 
+    2 px desplazamiento vertical 
+    5px desenfoque
+    0 expansion de la sombra  */
+    box-shadow: 0 1px 5px 0 #20212447;
+}
+
+/*lupa */
+main .maininput .searchicon {
+    /*Para poner la lupa */
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    padding-left: 10px;
+
+}
+
+
+main .maininput .microicon {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 14px;
+    height: 14px;
+    padding-left: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main .maininput .camicon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    width: 14px;
+    height: 14px;
+    padding-left: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main .mainbuttons{
+   /* background-color: rgb(204, 253, 203);*/
+    width: 530px;
+    margin: 0 auto ;
+
+}
+
+main .mainbuttons div{
+   /* background-color: antiquewhite;*/
+    /*puede ser inline o inline-block este los pone en una sola linea */
+    display: inline-block;
+}
+
+main .mainbuttons button{
+    border: 0;
+    /*altura*/
+    height: 35px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 10px;
+    padding: 0 15px ;
+    margin-right: 15px;
+}
+
+main .mainbuttons button:hover{
+    box-shadow: 0 1px 1px 0 #20212447;
+    border: 1px solid #dfe1e8;
+    color: #202124;
+
+}
+
+
+footer{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0%;
+    
+}
+
+footer section{
+    display: flex;
+    align-items:center ;
+    padding: 0 15px ;
+    height: 50%;
+    color: #999da2 ; 
+}
+
+footer section.footerle{
+    border-top: #999da2 solid 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer section.footerle div{
+    display: flex;
+    gap: 15px; 
+}
+
+footer section.footerle div a{
+    color: #999da2 ;
+    text-decoration: none;
+}
